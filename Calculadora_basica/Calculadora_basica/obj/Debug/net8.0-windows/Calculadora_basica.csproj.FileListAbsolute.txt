@@ -1,0 +1,16 @@
+C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\bin\Debug\net8.0-windows\Calculadora_basica.exe
+C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\bin\Debug\net8.0-windows\Calculadora_basica.deps.json
+C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\bin\Debug\net8.0-windows\Calculadora_basica.runtimeconfig.json
+C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\bin\Debug\net8.0-windows\Calculadora_basica.dll
+C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\bin\Debug\net8.0-windows\Calculadora_basica.pdb
+C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\obj\Debug\net8.0-windows\Calculadora_basica.Form1.resources
+C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\obj\Debug\net8.0-windows\Calculadora_basica.csproj.GenerateResource.cache
+C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\obj\Debug\net8.0-windows\Calculadora_basica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\obj\Debug\net8.0-windows\Calculadora_basica.AssemblyInfoInputs.cache
+C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\obj\Debug\net8.0-windows\Calculadora_basica.AssemblyInfo.cs
+C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\obj\Debug\net8.0-windows\Calculadora_basica.csproj.CoreCompileInputs.cache
+C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\obj\Debug\net8.0-windows\Calculadora_basica.dll
+C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\obj\Debug\net8.0-windows\refint\Calculadora_basica.dll
+C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\obj\Debug\net8.0-windows\Calculadora_basica.pdb
+C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\obj\Debug\net8.0-windows\Calculadora_basica.genruntimeconfig.cache
+C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\obj\Debug\net8.0-windows\ref\Calculadora_basica.dll
