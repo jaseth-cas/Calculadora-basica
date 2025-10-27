@@ -14,3 +14,4 @@ C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calcu
 C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\obj\Debug\net8.0-windows\Calculadora_basica.pdb
 C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\obj\Debug\net8.0-windows\Calculadora_basica.genruntimeconfig.cache
 C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\obj\Debug\net8.0-windows\ref\Calculadora_basica.dll
+C:\Users\Jaseth\OneDrive - Universidad Tecnológica de Panamá\Software IV\Calculadora Interfaz\Calculadora_basica\Calculadora_basica\obj\Debug\net8.0-windows\Calculadora_basica.Properties.Resources.resources

@@ -113,60 +113,70 @@
             // 
             // Btn_borr
             // 
+            Btn_borr.BackColor = Color.Brown;
+            Btn_borr.ForeColor = Color.Salmon;
             Btn_borr.Location = new Point(9, 146);
             Btn_borr.Name = "Btn_borr";
             Btn_borr.Size = new Size(74, 66);
             Btn_borr.TabIndex = 19;
             Btn_borr.Text = "<-";
-            Btn_borr.UseVisualStyleBackColor = true;
+            Btn_borr.UseVisualStyleBackColor = false;
             Btn_borr.Click += Btn_borr_Click;
             // 
             // Btn_div
             // 
+            Btn_div.BackColor = Color.Lavender;
             Btn_div.Location = new Point(169, 146);
             Btn_div.Name = "Btn_div";
             Btn_div.Size = new Size(74, 66);
             Btn_div.TabIndex = 18;
             Btn_div.Text = "÷";
-            Btn_div.UseVisualStyleBackColor = true;
+            Btn_div.UseVisualStyleBackColor = false;
             Btn_div.Click += btnOperador_Click;
             // 
             // Btn_Multi
             // 
+            Btn_Multi.BackColor = Color.Lavender;
             Btn_Multi.Location = new Point(249, 146);
             Btn_Multi.Name = "Btn_Multi";
             Btn_Multi.Size = new Size(74, 66);
             Btn_Multi.TabIndex = 17;
             Btn_Multi.Text = "*";
-            Btn_Multi.UseVisualStyleBackColor = true;
+            Btn_Multi.UseVisualStyleBackColor = false;
             Btn_Multi.Click += btnOperador_Click;
             // 
             // Btn_menos
             // 
+            Btn_menos.BackColor = Color.Lavender;
             Btn_menos.Location = new Point(249, 218);
             Btn_menos.Name = "Btn_menos";
             Btn_menos.Size = new Size(74, 66);
             Btn_menos.TabIndex = 16;
             Btn_menos.Text = "-";
-            Btn_menos.UseVisualStyleBackColor = true;
+            Btn_menos.UseVisualStyleBackColor = false;
+            Btn_menos.Click += btnOperador_Click;
             // 
             // Btn_mas
             // 
+            Btn_mas.BackColor = Color.Lavender;
             Btn_mas.Location = new Point(249, 290);
             Btn_mas.Name = "Btn_mas";
             Btn_mas.Size = new Size(74, 66);
             Btn_mas.TabIndex = 15;
             Btn_mas.Text = "+";
-            Btn_mas.UseVisualStyleBackColor = true;
+            Btn_mas.UseVisualStyleBackColor = false;
+            Btn_mas.Click += btnOperador_Click;
             // 
             // Btn_Res
             // 
+            Btn_Res.BackColor = Color.LightGreen;
+            Btn_Res.ForeColor = SystemColors.ControlLightLight;
             Btn_Res.Location = new Point(249, 362);
             Btn_Res.Name = "Btn_Res";
             Btn_Res.Size = new Size(74, 138);
             Btn_Res.TabIndex = 14;
             Btn_Res.Text = "=";
-            Btn_Res.UseVisualStyleBackColor = true;
+            Btn_Res.UseVisualStyleBackColor = false;
             Btn_Res.Click += btnIgual_Click;
             // 
             // Btn9

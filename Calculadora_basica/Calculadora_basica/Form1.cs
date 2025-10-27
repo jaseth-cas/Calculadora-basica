@@ -1,12 +1,10 @@
 ﻿namespace Calculadora_basica
 {
-
-
     public partial class Form1 : Form
     {
         double op1 = 0, op2 = 0;
         string opera = "";
-        bool n_entrada = false;
+        bool n_entrada = false, r_most= false;
 
         public Form1()
         {
@@ -39,7 +37,13 @@
             string numero = btn.Text;
 
             // Si es una nueva entrada o el texto contiene operador, limpiar
-            if (n_entrada || TxtBx_res.Text.Contains("×") || TxtBx_res.Text.Contains("÷"))
+            if (r_most)
+            {
+                TxtBx_res.Text = "0";
+                r_most = false;
+            }
+
+            if (n_entrada || TxtBx_res.Text.Contains("*") || TxtBx_res.Text.Contains("÷") || TxtBx_res.Text.Contains("+") || TxtBx_res.Text.Contains("-"))
             {
                 TxtBx_res.Text = "0";
                 n_entrada = false;
@@ -58,30 +62,46 @@
 
         private void btnOperador_Click(object sender, EventArgs e)
         {
+            // Bloquea operadores si acaba de mostrarse un resultado
+            if (r_most)
+                return;
+
             Button btn = (Button)sender;
 
             // Evita operadores seguidos
             if (n_entrada)
                 return;
 
-            // Guarda el primer número (respetando decimales)
-            if (double.TryParse(TxtBx_res.Text, System.Globalization.NumberStyles.Any,
+            // Intenta guardar el primer número respetando decimales
+            string texto = TxtBx_res.Text;
+
+            // Si el texto termina en un operador, quítalo (evita duplicados)
+            if (texto.EndsWith("+") || texto.EndsWith("-") || texto.EndsWith("*") || texto.EndsWith("÷") || texto.EndsWith("*"))
+                texto = texto.Substring(0, texto.Length - 1);
+
+            if (double.TryParse(texto, System.Globalization.NumberStyles.Any,
                                 System.Globalization.CultureInfo.InvariantCulture, out op1))
             {
-                opera = btn.Text;
+                opera = btn.Text; // Guarda el operador seleccionado
 
-                // Mostrar el operador al lado del número, sin perder decimales
-                TxtBx_res.Text = op1.ToString(System.Globalization.CultureInfo.InvariantCulture) + opera;
+                // Muestra el número con decimales + operador en la barra
+                TxtBx_res.Text = op1.ToString("0.###", System.Globalization.CultureInfo.InvariantCulture) + opera;
                 n_entrada = true;
             }
         }
+
 
         private void btnIgual_Click(object sender, EventArgs e)
         {
             double resultado = 0;
 
             // Evita intentar leer texto con operador
-            if (!double.TryParse(TxtBx_res.Text, System.Globalization.NumberStyles.Any,
+            string texto = TxtBx_res.Text;
+            // Quita el operador visual si está al final
+            if (texto.EndsWith("+") || texto.EndsWith("-") || texto.EndsWith("*") || texto.EndsWith("÷") || texto.EndsWith("×"))
+                texto = texto.Substring(0, texto.Length - 1);
+
+            if (!double.TryParse(texto, System.Globalization.NumberStyles.Any,
                                  System.Globalization.CultureInfo.InvariantCulture, out op2))
                 return;
 
@@ -100,12 +120,19 @@
                         }
                         resultado = op1 / op2;
                         break;
+                    case "+": // Suma
+                        resultado = op1 + op2;
+                        break;
+                    case "-": // Resta
+                        resultado = op1 - op2;
+                        break;
                 }
-
+                
                 // Mostrar resultado con máximo 10 decimales
                 TxtBx_res.Text = resultado.ToString("0.###", System.Globalization.CultureInfo.InvariantCulture);
                 op1 = resultado;
                 n_entrada = true;
+                r_most= true;
             }
             catch
             {
@@ -115,12 +142,12 @@
 
         private void Btn_Limp_Click(object sender, EventArgs e)
         {
-
             TxtBx_res.Text = "0";   // Reinicia el display
             op1 = 0;
             op2 = 0;
             opera = "";
             n_entrada = false;
+            r_most = false;
         }
 
         private void Btn_borr_Click(object sender, EventArgs e)
@@ -133,7 +160,7 @@
 
         private void Btn_punto_Click(object sender, EventArgs e)
         {
-            if (n_entrada || TxtBx_res.Text.Contains("*") || TxtBx_res.Text.Contains("÷"))
+            if (n_entrada || TxtBx_res.Text.Contains("*") || TxtBx_res.Text.Contains("÷") || TxtBx_res.Text.Contains("+") || TxtBx_res.Text.Contains("-"))
             {
                 TxtBx_res.Text = "0";
                 n_entrada = false;
@@ -142,5 +169,17 @@
             if (!TxtBx_res.Text.Contains("."))
                 TxtBx_res.Text += ".";
         }
+
+        private void Btn_mas_Click(object sender, EventArgs e)
+        {
+            btnOperador_Click(sender, e);
+        }
+
+        private void Btn_menos_Click(object sender, EventArgs e)
+        {
+            btnOperador_Click(sender, e);
+        }
+
     }
 }
+
